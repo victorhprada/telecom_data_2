@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+data/raw/*
+data/processed/*
+data/interim/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/interim/.gitkeep
+
+# Model files
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# Logs
+logs/
+*.log
+
+# Reports and figures
+reports/figures/*
+!reports/figures/.gitkeep
+
+# Environment variables
+.env
+
+# Mac OS
+.DS_Store 

@@ -1,0 +1,110 @@
+Análise dos Coeficientes da Regressão Logística para Previsão de Churn
+================================================================================
+
+Data da Análise: 2025-07-20 18:44:01
+Modelo Utilizado: LogisticRegression_20250720_183628.joblib
+
+Interpretação dos Coeficientes:
+- Coeficientes positivos indicam maior probabilidade de churn
+- Coeficientes negativos indicam menor probabilidade de churn
+- A magnitude (valor absoluto) indica a força da influência
+
+Top 10 Features Mais Influentes:
+--------------------------------------------------
+
+Contract_Two year                 -0.8805
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.8805
+
+tenure                            -0.7546
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.7546
+
+Contract_One year                 -0.7184
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.7184
+
+PhoneService_Yes                  -0.6512
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.6512
+
+InternetService_Fiber optic        0.4823
+    → aumenta a probabilidade de churn
+    → Magnitude do efeito: 0.4823
+
+Charges.Monthly                    0.4218
+    → aumenta a probabilidade de churn
+    → Magnitude do efeito: 0.4218
+
+TechSupport_Yes                   -0.4036
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.4036
+
+PaymentMethod_Electronic check     0.3927
+    → aumenta a probabilidade de churn
+    → Magnitude do efeito: 0.3927
+
+OnlineSecurity_Yes                -0.3803
+    → diminui a probabilidade de churn
+    → Magnitude do efeito: 0.3803
+
+PaperlessBilling_Yes               0.2490
+    → aumenta a probabilidade de churn
+    → Magnitude do efeito: 0.2490
+
+Agrupamento por Impacto:
+--------------------------------------------------
+
+Forte Impacto Positivo (> 0.5):
+
+Impacto Positivo Moderado (0.2 - 0.5):
+- InternetService_Fiber optic
+- Charges.Monthly
+- PaymentMethod_Electronic check
+- PaperlessBilling_Yes
+- MultipleLines_Yes
+
+Impacto Positivo Fraco (0 - 0.2):
+- MultipleLines_No phone service
+- Charges.Total
+- StreamingTV_Yes
+- PaymentMethod_Mailed check
+- Partner_Yes
+
+Forte Impacto Negativo (< -0.5):
+- Contract_Two year
+- tenure
+- Contract_One year
+- PhoneService_Yes
+
+Impacto Negativo Moderado (-0.5 - -0.2):
+- TechSupport_Yes
+- OnlineSecurity_Yes
+- OnlineBackup_Yes
+- Dependents_Yes
+
+Impacto Negativo Fraco (-0.2 - 0):
+- DeviceProtection_Yes
+- gender_Male
+- InternetService_No
+- StreamingMovies_No internet service
+- StreamingTV_No internet service
+- OnlineSecurity_No internet service
+- TechSupport_No internet service
+- DeviceProtection_No internet service
+- OnlineBackup_No internet service
+- PaymentMethod_Credit card (automatic)
+- StreamingMovies_Yes
+
+Recomendações Baseadas nos Coeficientes:
+--------------------------------------------------
+
+Para Reduzir Churn:
+- Fortalecer/Incentivar: Contract_Two year
+- Fortalecer/Incentivar: tenure
+- Fortalecer/Incentivar: Contract_One year
+
+Monitorar com Atenção:
+- Potencial Risco: InternetService_Fiber optic
+- Potencial Risco: Charges.Monthly
+- Potencial Risco: PaymentMethod_Electronic check

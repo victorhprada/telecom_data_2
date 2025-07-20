@@ -1,0 +1,31 @@
+Análise de Contratos, Tempo como Cliente e Gastos vs Churn
+============================================================
+
+1. Taxa de Churn por Tipo de Contrato
+----------------------------------------
+Churn               False      True 
+Contract                            
+Month-to-month  55.430712  44.569288
+One year        86.043450  13.956550
+Two year        94.492255   5.507745
+
+2. Estatísticas de Tempo como Cliente por Status de Churn
+----------------------------------------
+        count       mean        std  min   25%   50%   75%   max
+Churn                                                           
+False  5174.0  37.569965  24.113777  0.0  15.0  38.0  61.0  72.0
+True   2093.0  19.433827  20.613094  1.0   2.0  11.0  32.0  72.0
+
+3. Estatísticas de Gastos Mensais por Status de Churn
+----------------------------------------
+        count       mean        std    min    25%     50%   75%     max
+Churn                                                                  
+False  5174.0  61.265124  31.092648  18.25  25.10  64.425  88.4  118.75
+True   2093.0  73.260965  25.688977  18.75  54.75  79.250  94.1  118.35
+
+4. Correlações
+----------------------------------------
+                   tenure  Charges.Monthly     Churn
+tenure           1.000000         0.247982 -0.334257
+Charges.Monthly  0.247982         1.000000  0.180306
+Churn           -0.334257         0.180306  1.000000

@@ -1,0 +1,14 @@
+Resumo das Variáveis Mais Importantes para Prever Churn
+==================================================
+
+Variáveis Numéricas Mais Correlacionadas:
+----------------------------------------
+Charges.Monthly           0.180
+Charges.Total            -0.190
+tenure                   -0.334
+
+Variáveis Categóricas com Maior Associação:
+----------------------------------------
+Contract                  0.391
+OnlineSecurity            0.327
+TechSupport               0.323

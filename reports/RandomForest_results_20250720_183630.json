@@ -1,0 +1,101 @@
+{
+    "model_name": "RandomForest",
+    "timestamp": "20250720_183630",
+    "metrics": {
+        "accuracy": 0.7799174690508941,
+        "precision": 0.6486486486486487,
+        "recall": 0.5155131264916468,
+        "f1": 0.574468085106383,
+        "confusion_matrix": [
+            [
+                918,
+                117
+            ],
+            [
+                203,
+                216
+            ]
+        ],
+        "roc_auc": 0.818415136107364,
+        "feature_importance": {
+            "features": [
+                "tenure",
+                "Charges.Total",
+                "Charges.Monthly",
+                "InternetService_Fiber optic",
+                "PaymentMethod_Electronic check",
+                "Contract_Two year",
+                "Contract_One year",
+                "OnlineSecurity_Yes",
+                "TechSupport_Yes",
+                "PaperlessBilling_Yes",
+                "Dependents_Yes",
+                "OnlineBackup_Yes",
+                "OnlineBackup_No internet service",
+                "MultipleLines_Yes",
+                "Partner_Yes",
+                "OnlineSecurity_No internet service",
+                "gender_Male",
+                "TechSupport_No internet service",
+                "StreamingMovies_Yes",
+                "StreamingTV_Yes",
+                "DeviceProtection_Yes",
+                "DeviceProtection_No internet service",
+                "PaymentMethod_Mailed check",
+                "PaymentMethod_Credit card (automatic)",
+                "StreamingTV_No internet service",
+                "StreamingMovies_No internet service",
+                "InternetService_No",
+                "MultipleLines_No phone service",
+                "PhoneService_Yes",
+                "SeniorCitizen"
+            ],
+            "importance": [
+                0.18395298907049937,
+                0.17464685663377566,
+                0.11773468629382144,
+                0.07461320500216667,
+                0.06201467428087319,
+                0.054932607413201724,
+                0.03749012190333281,
+                0.030641227374571735,
+                0.027497833101136755,
+                0.018497009194575486,
+                0.016466135003705185,
+                0.01644902796845825,
+                0.015127538379403664,
+                0.014915955092561098,
+                0.014467142694433473,
+                0.014377605960172552,
+                0.014352238160182986,
+                0.01202675304046371,
+                0.012017194903239003,
+                0.011709270391310676,
+                0.011605741406951173,
+                0.01159658161989888,
+                0.010436016716319585,
+                0.009671111413045988,
+                0.009550161558943539,
+                0.008194632080419482,
+                0.0064588808515063925,
+                0.00434900462209766,
+                0.004207797868931938,
+                0.0
+            ]
+        }
+    },
+    "cv_scores": {
+        "accuracy": 0.7816946202695563,
+        "precision": 0.6582197637568648,
+        "recall": 0.5041826794172849,
+        "f1": 0.5708265536678081,
+        "roc_auc": 0.8126583908342397,
+        "std": {
+            "accuracy": 0.0050357752488615695,
+            "precision": 0.015144428596753828,
+            "recall": 0.011577104198170792,
+            "f1": 0.008688414652547266,
+            "roc_auc": 0.008660099487730668
+        }
+    }
+}
